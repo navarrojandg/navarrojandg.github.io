@@ -4,7 +4,7 @@
   "description": "github pages",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./bin/www"
+    "start": "nodemon -e html,css,js,json ./bin/www"
   },
   "repository": {
     "type": "git",

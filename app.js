@@ -3,21 +3,21 @@ const createError = require('http-errors');
 const path = require('path');
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'assets')));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.use('intro', (req, res) => {
+app.get('/intro', (req, res) => {
     res.sendFile(path.join(__dirname, 'intro.html'));
 });
 
-app.use('browser', (req, res) => {
+app.get('/browser', (req, res) => {
     res.sendFile(path.join(__dirname, 'browser.html'));
 });
 
-app.use('nodejs', (req, res) => {
+app.get('/nodejs', (req, res) => {
     res.sendFile(path.join(__dirname, 'nodejs.html'));
 });
 
