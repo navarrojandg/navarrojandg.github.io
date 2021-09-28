@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/intro', (req, res) => {
-    res.sendFile(path.join(__dirname, 'intro.html'));
+app.get('/history', (req, res) => {
+    res.sendFile(path.join(__dirname, 'history.html'));
 });
 
 app.get('/browser', (req, res) => {
