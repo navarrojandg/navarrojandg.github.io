@@ -3,7 +3,7 @@ const createError = require('http-errors');
 const path = require('path');
 const app = express();
 
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
