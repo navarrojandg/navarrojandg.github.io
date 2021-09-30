@@ -1,0 +1,1 @@
+function changeColor() { document.getElementById('targetText').style.color = "red"; }
