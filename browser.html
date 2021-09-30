@@ -20,7 +20,48 @@
         <article>
             <h1>JavaScript in the Browser</h1>
             <p>Given that JavaScript was born and raised in the browser, there are many different ways to execute JavaScript code within the browser. Below are are some of the ways to execute JavaScript within the web browser.</p>
-            
+
+            <section>
+                <article>
+                    <h2>HTML's script tag</h2>
+                    <p>
+                        JavaScript is usually run through the use of the HTML script tag. By setting the src attribute for the script tag, the web page will download and execute the JavaScript file. JavaScript can also be executed by directly writing code on the HTML file itself.
+                        For example
+                    </p>
+                    <script>
+                        console.log('Hi! I was executed from the HTML tag!');
+                    </script>
+                    <pre>
+    &lt;script&gt;
+        console.log('Hi! I was executed from the HTML tag!');
+    &lt;/script&gt;
+                    </pre>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <h2>Developer Tools</h2>
+                    <p>
+                        The 'console' tab in the developer console allows developers to quickly run JavaScript on the page that the developer tools were opened on.
+                    </p>
+                    <script>
+                        console.log('Hi! Do you see me in the console logs?');
+                    </script>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <h2>URL / Bookmark</h2>
+                    <p>
+                        On most modern browsers JavaScript can be executed directly from the url by prefixing the code with <pre>javascript:</pre>
+                        For example try copy and pasting this URL:
+                        <pre>javascript:alert('Hi! I was executed with the URL box!')</pre>
+                    </p>
+                    <p>You can then save this URL as a bookmark to execute this snippet of JavaScript everytime you navigate to the bookmark.</p>
+                </article>
+            </section>
         </article>
     </main>
 </body>
